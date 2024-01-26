@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <title>Challenge alura</title>
+
+   
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="img__pc">
+            <h1>
+                <a>
+                    <img src="img/computador.png" alt="imagem-computador">
+                </a>
+            </h1>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="principal">
+
+            <div class="input">
+                <div class="digite-texto">
+                    <textarea name="text-input" id="text-input" cols="40" rows="10" placeholder="Digite sua mensagem..."></textarea>
+                </div>
+                
+                <div class="botoes">
+                    <button class="encriptador" onclick="botaoCriptografar()">
+                        Criptografar
+                    </button>
+                    <button class="descriptador" onclick="botaoDescriptografar()">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+
+            <div class="output">
+                <div class="vacuo">
+                    <img id="img" src="img/binario.png" alt="numeracao-binaria" width="50%">
+                    <h2 id="h2-resultado">
+                        digite um texto
+                    </h2>
+                    <p id="comeco">
+                        Digite uma mensagem para criptografar ou descriptografar.
+                    </p>
+                </div>
+                <div class="preenchido">
+                    <textarea id="text-output" cols="30" rows="20"></textarea>
+                    <button class="copiar" onclick="copiarMensagem()">Copiar texto</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="teste2.js"></script>
+
+</body>
+</html>
